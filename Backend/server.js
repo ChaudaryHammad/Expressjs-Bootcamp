@@ -2,6 +2,20 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const cors = require('cors');
+let os = require('os');
+console.log("Computer OS Platform Info : " + os.platform());
+console.log("Computer OS Architecture Info: " + os.arch());
+
+
+
+
+
+
+
+
+
+
+
 
 app.use(cors());
 const port = process.env.PORT || 5000;
